@@ -1,2 +1,2 @@
-# puppet-demo-flask
+# puppet-demoflask
 Demo Flask python app
