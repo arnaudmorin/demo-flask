@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import platform
 import codecs
 import yaml
