@@ -5,35 +5,40 @@ import codecs
 import yaml
 
 from flask import Flask
-#from flask_redis import Redis
 
 app = Flask(__name__)
-#app.config['REDIS_HOST'] = 'localhost'
-#app.config['REDIS_DB'] = '5'
-#app.config['REDIS_KEY'] = 'count'
-
-
-# Locate the config file to use
-app.config.from_object('config')
-
-#redis = Redis(app)
 
 @app.route('/')
 def homepage():
-#    count = redis.incr(app.config['REDIS_KEY'])
-    return """
-<html><head></head>
+    html = """
+<html><head>
+<style>
+html {
+    background: url(http://thecatapi.com/api/images/get?format=src&type=gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1 {
+    color: white;
+    top: 30%;
+    position: absolute;
+    width: 100%;
+    font-size: 70px;
+}
+</style>
+</head>"""
+
+    html += """
 <body><center>
-<h1>Hi, I\'m {}.</h1>
-<!-- <h2>This page has been seen  times.</h2> -->
-<a href="http://thecatapi.com">
- <img src="http://thecatapi.com/api/images/get?format=src&type=gif">
-</a>
+<h1>hello from<br/>{}</h1>
 </center></body></html>
 """.format(
         platform.node(),
-#        count,
     )
+
+    return html
 
 
 if __name__ == "__main__":
