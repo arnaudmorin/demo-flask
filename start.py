@@ -1,12 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import platform
-import codecs
-import yaml
-
 from flask import Flask
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def homepage():
@@ -14,7 +12,7 @@ def homepage():
 <html><head>
 <style>
 html {
-    background: url(http://thecatapi.com/api/images/get?format=src&type=gif) no-repeat center center fixed; 
+    background: url(http://thecatapi.com/api/images/get?format=src&type=gif) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
