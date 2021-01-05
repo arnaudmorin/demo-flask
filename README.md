@@ -3,7 +3,7 @@ Demo Flask python app
 
 
 ## Installation
-`python3 install -r requirements.txt`
+`pip3 install -r requirements.txt`
 
 ## Usage
 ### Start in foreground
