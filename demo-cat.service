@@ -1,0 +1,14 @@
+[Unit]
+Description=web background
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /opt/demo-flask/start.sh
+ExecStop=/bin/kill -9 $MAINPID
+KillMode=process
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
