@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/bin/bash /etc/demo-flask/start.sh
+ExecStart=/bin/bash /opt/demo-flask/start.sh
 ExecStop=/bin/kill -9 $MAINPID
 KillMode=process
 Restart=always
