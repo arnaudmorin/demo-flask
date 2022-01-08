@@ -18,3 +18,11 @@ or
 ### Start in background
 nohup ./start.sh &
 
+or use the systemd service file provided:
+
+```
+cp demo-cat.service /etc/systemd/system/
+systemctl enable demo-cat.service
+systemctl daemon-reload
+systemctl start demo-cat.service
+```
