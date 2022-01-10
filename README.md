@@ -16,7 +16,10 @@ or
 
 
 ### Start in background
+
+```
 nohup ./start.sh &
+```
 
 or use the systemd service file provided:
 
