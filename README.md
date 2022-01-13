@@ -24,8 +24,8 @@ nohup ./start.sh &
 or use the systemd service file provided:
 
 ```
-cp demo-cat.service /etc/systemd/system/
-systemctl enable demo-cat.service
+cp demo-flask.service /etc/systemd/system/
+systemctl enable demo-flask.service
 systemctl daemon-reload
-systemctl start demo-cat.service
+systemctl start demo-flask.service
 ```
