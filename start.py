@@ -12,7 +12,7 @@ def homepage():
 <html><head>
 <style>
 html {
-    background: url(http://thecatapi.com/api/images/get?format=src&type=gif) no-repeat center center fixed;
+    background: url(https://cat.arnaudmorin.fr/cat) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
