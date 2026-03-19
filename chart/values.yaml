@@ -1,0 +1,14 @@
+---
+replicas: 1
+
+image:
+  repository: arnaudmorin/demo-flask
+  tag: "latest"
+
+service:
+  port: 8080
+
+ingress:
+  enabled: true
+  className: "traefik"
+  host: demo.local
