@@ -12,3 +12,6 @@ ingress:
   enabled: true
   className: "traefik"
   host: demo.local
+
+# An empty catApiUrl will prevent changing the default CAT_API_URL on the app
+catApiUrl: ""

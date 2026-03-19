@@ -18,3 +18,8 @@ spec:
       containers:
       - name: {{ .Release.Name }}
         image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        {{- if .Values.catApiUrl }}
+        env:
+        - name: CAT_API_URL
+          value: {{ .Values.catApiUrl }}
+        {{- end }}
